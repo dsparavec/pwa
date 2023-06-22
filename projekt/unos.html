@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>unos.html</title>
+		<meta charset = "utf-8">
+		
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+	</head>
+	
+	<body>
+		<header>
+			<figure>
+				<img src = "img/BZ_logo.png">
+			</figure>
+			<nav>
+				<ul>
+					<li><a href="index.php">HOME</a></li>
+					<li><a href="">BERLIN-SPORT</a></li>
+					<li><a href="">KULTUR UND SHOW</a></li>
+					<li><a href="#">UNOS VIJESTI</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section>
+			<form enctype = "multipart/form-data" name = "nova_vijest" action = "skripta.php" method = "POST">
+				<div class = "odabir_naslova">
+					<label for = "naslov">Naslov vijesti:</label>
+					 
+					 <input type = "text" name = "naslov" id = "naslov">
+				</div>
+				
+				<div class = "odabir_sazetka">
+					<label for = "sazetak">Kratki sadržaj vijesti (do 50 znakova):</label>
+					<textarea name = "sazetak" id = "sazetak" cols = "30" rows = "10" maxlength = "50"></textarea>
+				</div>
+				
+				<div class = "odabir_sadrzaja">
+					<label for = "sadrzaj">Sadržaj vijesti:</label>
+					<textarea name = "sadrzaj" id = "sadrzaj" cols = "30" rows = "10"></textarea>
+				</div>
+				
+				<div class = "odabir_kategorije">
+					<label for = "kategorija">Odaberite vrstu sadrzaja:</label>
+					<select name = "kategorija" id = "kategorija">
+						<option value = "Sport">Sport</option>
+						<option value = "Kultura">Kultura</option>
+					</select>
+				</div>
+				
+				<div class = "odabir_slike">
+					<label for = "slika">Odaberite sliku:</label>
+					<input type = "file" name = "slika" id = "slika" accept = "projekt/img/*">
+				</div>
+				
+				<div class = "arhiva_vijesti">
+					<label for = "arhiva">Želite li arhivirati vijest?</label>
+					<input type = "checkbox" name = "arhiva" id = "arhiva">
+				</div>
+				
+				<div class = "slanje">
+					<input type = "reset" value = "Poništi">
+					<input type = "submit" value = "Pošalji">
+				</div>
+			</form>
+		</section>
+		
+		<footer>
+			<div class = "footer">
+				<p>Weitere Online-Angebote der Axel Springer SE:</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,195 @@
+/*Glavni CSS*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgb(238,238,238);
+	height: 1000px;
+}
+
+header, section{
+	box-shadow: 0px 1px 5px #aaaaaa;
+}
+
+header {
+	width: 100%;
+	height: 6%;
+	background-color: white;
+	position: relative;
+	border-bottom: 2px solid rgb(255, 213, 27);
+}
+
+header figure{
+	width:50px;
+	margin: 0 auto;
+	float: left;
+}
+
+header figure img{
+
+	width: 35%;
+
+}
+
+img{
+	width:100%;
+}
+
+nav{
+	display: block;
+	width: 60%;
+    position: absolute;
+    bottom: 0px;
+	margin: 0 auto;
+	margin-left: 20%;
+	margin-right: 20%;
+	
+}
+nav figure{
+	width: 15%;
+	float: left;
+}
+
+nav ul{
+	width: 50%;
+	float: right;
+	list-style-type: none;
+
+}
+li{
+	float: right;
+	width: 20%;
+	text-align: center;
+}
+li a{
+	text-decoration: none;
+	display: block;
+	font-size: 10px;
+	padding: 2%;
+	background-color: white;
+}
+
+li a:last-child{
+	border-right: none;
+}
+
+li a:link, li a:visited{
+	color: rgb(89,84,84);
+}
+
+li a:hover, li a:active{
+	color: white;
+	background-color: rgb(89,84,84);
+}
+
+main{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+}
+
+section{
+	clear: both;
+	width: 60%;
+	overflow: auto;
+	margin: 5px auto 20px;
+	background-color: white;
+}
+
+h2{
+	width: 100%;
+	text-align: left;
+	padding: 5px;
+}
+
+.sport h2 {
+	color: white;
+	background-color: rgb(255, 213, 27);
+}
+
+.sport h3{
+	color: rgb(255,115,0);
+}
+
+.kultura h2{
+	color: white;
+	background-color: rgb(255, 213, 27);
+}
+
+.kultura h3{
+	color: rgb(222,13,34);
+}
+
+article{
+	width: 100%;
+	margin: 1% 1.6%;
+	float: left;
+}
+
+article figure {
+	float: left;
+	width:20%;
+}
+
+article figure img{
+	width: 100%;
+}
+
+footer{
+	clear: both;
+	background-color: rgb(105,105,105);
+	height: 10%;
+	width: 100%;
+	position:fixed;
+	bottom: 0px;
+}
+
+.footer {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: rgb(105,105,105);
+}
+
+.footer p {
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+/*CSS za unos.php*/
+
+.clanak h1{
+	font-size: 40px;
+}
+
+.clanak article{
+	width: 100%;
+}
+
+
+form label{
+	display: block;
+}
+
+input[type="text"], textarea{
+	width: 20em;
+}
+
+
+
+/*CSS za administratora*/
+
+.admin figure {
+	width: 20%;
+}
